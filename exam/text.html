@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>星河|程序测试问卷</title>
+<style>
+div{
+    
+    text-align:center;
+    
+}
+</style>
+</head>
+<body background="背景.png" mpa-version="7.5.8" mpa-extension-id="....">
+<div id="box" style="opacity: 0.01;"> <h2>测试你的编程能力!</h2></div>
+    	<script>
+        	var i = 1;
+        	var flag = true;
+        	function fade() {
+            	var box = document.getElementById('box');
+            	if (document.all) {
+                	box.style.filter = "alpha(opacity='+i+')";
+            	} else {
+                	box.style.opacity = parseFloat(i / 100);
+            	}
+            	if (i < 100 && flag) {
+                	i += 5;
+            	}
+            	else {
+                	flag = false;
+           	}
+            	if (i > 0 && !flag) {
+                	i -= 5;
+            	}
+            	else {
+                	flag = true;
+            	}
+            	setTimeout('fade()', 50);
+        	}
+        	fade();
+    	</script>
+	<div>
+    	<input type="button" value="点我测试" onclick="window.open('https://ks.wjx.top/jq/57898268.aspx')">
+	</div>
+
+</body>
+</html>
